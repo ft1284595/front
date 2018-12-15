@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .nav {
+            text-align:center;
+        }
+        .nav a {
+            width: 120px;
+            height: 50px;
+            display: inline-block;
+            /* background-color: pink; */
+            /* 因为a是行内元素,没有大小,我们需要转换 inline-block */
+            display:inline-block;
+            background-image:url(images/bg.png);
+            text-align: center;
+            /* 1.行内元素 行内块元素 我们可以看做文本 */
+            color:white;
+            text-decoration:none;
+            /* 2.行高=盒子的高度, 可以让单行文本垂直居中 */
+            line-height: 50px;
+        }
+        .nav a:hover {
+            background-image:url(images/bgc.png);
+        }
+        .banner{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+    </div>
+    <a href="#">baidu</a>
+    <div class="banner">123</div>
+</body>
+
+</html>

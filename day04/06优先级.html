@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #ya {
+            /* 权重 0, 1, 0, 0 */
+            color: blue;
+        }
+        
+        /* 类选择器的权重 高于 标签选择器 */
+        .yase {
+        /* 权重 0, 0, 1, 0 */
+            color: green;
+        }
+        div {
+        /* 权重 0, 0, 0, 1 */
+            color: red;
+        }
+
+        div {
+            color: hotpink !important;
+        }
+
+        * {
+            /* 权重是 0, 0, 0, 0 */
+        }
+        /* 
+        *       0000
+        div     0001
+        .one    0010
+        #two    0100
+        行内    1000
+        !import 无穷大 
+        */
+    </style>
+</head>
+<body>
+    <!-- 行内样式的权重是 无穷大 -->
+    <div id="ya" class="yase" style="color: orange">亚瑟</div> 
+
+</body>
+</html>

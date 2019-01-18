@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 1.权重相同 则使用就近原则 */
+        /* div {
+            color: red;
+        }
+        div {
+            color: green;
+        } */
+
+        /* 2. 权重会叠加 */
+        div p { /* 0001 + 0001 = 0002 */
+            color: green;
+        }
+        p { /* 0001 */
+            color: red;
+        }
+
+        .feng { /* 0010 */
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p class="feng"> 凤姐 </p>
+    </div> 
+</body>
+</html>

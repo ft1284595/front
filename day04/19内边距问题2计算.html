@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            /* width: 200px;
+            height: 200px; */
+            border: 1px solid red;
+            padding: 20px;
+            /* 非常严重的问题, padding 会撑开 带有width和height的盒子 */
+            /* 1.我们要求这个div就是200 * 200的盒子
+            2.但是我们给了padding就撑开盒子了
+            3.蚊我们怎样才能保证盒子 不超过 200 * 200 */
+            /* 只能改变width 和 height的值
+            盒子的长度 = 左右两个padding + 内容的宽度
+            盒子的高度 = 上下两个padding + 内容的高度*/
+            width: 160px;
+            height: 160px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div> 
+</body>
+</html>

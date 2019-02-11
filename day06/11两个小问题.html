@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .top {
+            /* 文字和图片比较特殊,浮动的情况下这两种类型的元素并没有脱标 */
+            /* float: left; */
+
+            /* 绝对定位是完整意义的脱标 */
+            position: absolute;
+            top: 0;
+            left: 0; 
+        }
+        .bottom {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">123123</div> 
+    <div class="bottom">abcabc</div>
+</body>
+</html>

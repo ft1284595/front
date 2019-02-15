@@ -1,0 +1,206 @@
+/* 版心 */
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+.style-red {
+    color: #f10215 !important;
+}
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+}
+input, button {
+    padding: 0;
+    border: 0;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?efy4cs');
+    src:  url('../fonts/icomoon.eot?efy4cs#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?efy4cs') format('truetype'),
+      url('../fonts/icomoon.woff?efy4cs') format('woff'),
+      url('../fonts/icomoon.svg?efy4cs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #F6F6F6;
+}
+/* 京东 顶部 start  */
+.J_event {
+    /* height: 80px; */ /* 这里可以不用设置高度,因为它的孩子a标签有设置宽度, 孩子会自动撑开父元素 */
+    background-color: #000;
+}
+
+.J_event a {
+    height: 80px;
+    display: block;
+    background: url(../images/top.jpg) no-repeat;
+    position: relative;
+}
+
+.J_event a i {
+    width: 20px;
+    height: 20px;
+    /* background-color: pink; */
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-family: icomoon;
+    font-style: normal;
+    text-align: center;
+    line-height: 20px;
+    color: #FFF;
+    background: rgba(0,0,0,.4);
+}
+/* 京东 顶部 end  */
+
+
+/* 快捷导航模块制作 start  */
+.shortcut {
+    /* height: 30px; */
+    height: 29px;
+    background-color: #E3E4E5;
+    border-bottom: 1px solid #DDDDDD;
+    color: #9D9D9D;
+    font-size: 12px;
+    line-height: 30px;
+}
+.shortcut a {
+    color: #9D9D9D;
+    font-size: 12px;
+    text-decoration: none;
+}
+.shortcut a:hover {
+    color: #c81623;
+}
+.pos {
+    font-family: icomoon;
+    font-style: normal;
+    font-size: 14px;
+    color: #f10215;
+}
+.shortcut .fl li {
+    margin-left: 200px;
+    height: 30px;
+}
+.shortcut .fr li {
+    float: left;
+}
+
+.spacer {
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 10px 10px 0;
+}
+.dropdown {
+    padding-right: 15px;
+    position: relative;
+}
+.dropdown i {
+    font-family: icomoon;
+    font-style: normal;
+    font-size: 16px;
+    position: absolute;
+    right: -2px;
+    top: -2px; 
+}
+.erweima {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    position: absolute;
+    left: -8px;
+    top: 35px;
+}
+/* 快捷导航模块制作 end  */
+/* header 部分 start */
+.header {
+    height: 140px;
+}
+.inner {
+    height: 140px;
+    background-color: pink;
+    position: relative;
+}
+/* header 部分 end */
+/* logo 部分 start  */
+.logo {
+    width: 190px;
+    height: 170px;
+    position: absolute;
+    left: 0;
+    top: -30px;
+    background-color: purple;
+    box-shadow: 0 -12px 10px rgba(0,0,0,.2);
+}
+.logo h1 {
+    margin: 0;
+}
+.logo a {
+    display: block;
+    width: 190px;
+    height: 170px;
+    background: url(../images/logo.jpg) no-repeat;
+    text-indent: -99999px; /* 让a标签中的文字(京东这两个字是搜索引擎优化用的,不能省去不写)偏移出去,然后用overflow:hidden 隐藏掉 */
+    overflow: hidden;
+}
+/* logo 部分 start  */
+/* 搜索部分 start */
+.search {
+    width: 550px;
+    height: 35px;
+    position: absolute;
+    top: 25px;
+    left: 320px;
+}
+.search input {
+    width: 493px;
+    height: 33px;
+    border: 1px solid #F10215;
+    padding: 0 0 0 5px;
+    outline: none; 
+    color: #989898;
+    float: left;
+}
+.search button {
+    width: 50px;
+    height: 35px;
+    background-color: #F10215;
+    float: left;
+    cursor: pointer;
+    outline: none;
+}
+.search i {
+    font-family: icomoon;
+    font-style: normal;
+    color: #fff;
+    font-size: 16px;
+}
+.search em {
+    position: absolute;
+    top: 10px;
+    right: 65px;
+    width: 19px;
+    height: 15px;
+    cursor: pointer;
+    background: url(../images/sprite-search.png) no-repeat;
+}
+.search em:hover {
+    background-position: -30px 0;
+}
+/* 搜索部分 end */

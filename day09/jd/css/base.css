@@ -19,6 +19,7 @@ li {
 
 ul {
     margin: 0;
+    padding: 0;
 }
 input, button {
     padding: 0;
@@ -27,6 +28,18 @@ input, button {
 
 a {
     text-decoration: none;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
 }
 @font-face {
     font-family: 'icomoon';
@@ -37,6 +50,11 @@ a {
       url('../fonts/icomoon.svg?efy4cs#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -99,6 +117,7 @@ body {
 .shortcut .fl li {
     margin-left: 200px;
     height: 30px;
+    overflow: hidden;
 }
 .shortcut .fr li {
     float: left;
@@ -138,7 +157,7 @@ body {
 }
 .inner {
     height: 140px;
-    background-color: pink;
+    /* background-color: pink; */
     position: relative;
 }
 /* header 部分 end */
@@ -292,4 +311,87 @@ body {
 .navitems li a:hover {
     color: #f10215;
 }
+.navitems .spacer {
+    float: left;
+    margin: 15px -10px 0px 20px;
+    /* margin-top: 15px;
+    margin-left: 20px;
+    margin-right: -10px;
+    margin-bottom: 0px; */
+}
 /* 导航栏信息 end  */
+
+/* 页面底部分 start */
+.footer {
+    height: 560px;
+    background-color: #EAEAEA;
+}
+.footer-service {
+    border-bottom: 1px solid #DEDEDE;
+}
+.footer-service-inner {
+    padding: 30px 0;
+}
+.footer-service-inner li {
+    float: left;
+    width: 297px;
+    height: 42px;
+}
+.service-unit {
+    width: 225px;
+    height: 42px;
+    margin: 0 auto;
+    position: relative;
+}
+.service-unit h5 {
+    width: 36px;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/ico_service.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.service-unit p {
+    line-height: 42px;
+    margin-left: 45px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.service-unit .kuai {
+    background-position: 0 -44px;
+}
+.service-unit .hao {
+    background-position: 0 -86px;
+}
+.service-unit .sheng {
+    background-position: 0 -130px;
+}
+/* 页面底部分 end */
+/* 帮助模块 */
+.help {
+    height: 180px;
+    background-color: pink;
+    padding-top: 20px;
+}
+.help dl {
+    float: left;
+    width: 198px;
+}
+.help dt {
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+    height: 30px;
+}
+.help dd {
+    height: 22px;
+}
+.help dd a {
+    color: #727272;
+    font-size: 12px;
+}
+.help dd a:hover {
+    color: #f10215;
+}

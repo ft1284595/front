@@ -1,12 +1,12 @@
 /* main 部分开始 */
 .jd {
-    height: 480px;
-    background-color: pink;
+    /* height: 480px; */
+    /* background-color: pink; */
     position: relative;
 }
 .jd-inner {
     height: 480px;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     position: relative;
     z-index: 1;
 }
@@ -118,6 +118,113 @@
 .jd-clo3 {
     width: 190px;
     height: 480px;
-    background-color: yellow;
     float: right;
+}
+.jd-clo3 a {
+    font-size: 12px;
+    color: #747474;
+}
+.user {
+    height: 95px;
+    background-color: pink;
+    padding: 20px 15px 0;
+}
+.user-info {
+    height: 40px;
+    padding-left: 54px;
+    font-size: 12px;
+    color: #747474;
+    line-height: 22px;
+    position: relative;
+}
+
+.info-img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.info-img img {
+    width: 100%;
+    height: auto; /* 自动 跟随着宽度 一起缩放 */
+}
+
+.user-info a {
+    font-size: 12px;
+    color: #747474;
+}
+.user-info a:hover {
+    color: #f10215;
+}
+
+.user-profit {
+    margin-top: 14px;
+}
+
+.user-profit a {
+    width: 70px;
+    height: 20px;
+    border: 2px solid #f10215;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 3px;
+}
+
+.user-profit a:hover {
+    background-color: #f10215;
+    color: #fff;
+}
+
+.news {
+    height: 149px;
+    /* background-color: purple; */
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 15px 0;
+}
+.tab-hd {
+    border-bottom: 1px solid #ccc;
+    padding: 3px 0;
+    position: relative;
+}
+.tab-hd a {
+    margin: 0 4px;
+}
+.cuxiao {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+.news .more1 {
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+
+.line {
+    width: 28px;
+    height: 2px;
+    background-color: #f10215;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.tab-bd {
+    margin-top: 10px;
+}
+
+.tab-bd li {
+    height: 23px;
+    line-height: 23px;
+}
+
+.jd-service {
+    height: 210px;
+    background-color: skyblue;
 }

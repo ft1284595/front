@@ -225,6 +225,40 @@
 }
 
 .jd-service {
-    height: 210px;
-    background-color: skyblue;
+    height: 209px;
+    /* background-color: skyblue; */
+    width: 190px;
+    overflow: hidden;
+}
+.jd-service ul {
+    width: 195px;
+}
+
+.jd-service li {
+    width: 47px;
+    height: 69px;
+    /* background-color: purple; */
+    float: left;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.jd-service li a {
+    width: 100%;
+    height: 100%;  /* 根据父亲 */
+    /* height: auto;  针对于自己的高度和宽度 */
+    display: block;
+}
+
+.jd-service i {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 15px auto 8px;
+    background-color: pink;
+    background: url(../images/sprite_fs@1x.png) no-repeat;
+}
+
+.jd-service p {
+    text-align: center;
 }

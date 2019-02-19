@@ -10,4 +10,5 @@ day07/12 complete.
 day08/15 complete.
 day09/05 complete.
 day10/03 complete.
+day10/07 complete.
 

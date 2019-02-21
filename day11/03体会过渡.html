@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 多组属性用逗号分隔 */
+            /* transition: width 0.5s ease 0s, height 0.3s; */
+            /* transition: all 0.5s ease 0s; */
+            /* 过渡 写到本身上 谁做过渡动画, 写到谁身上 */
+            transition: all 0.5s;
+        }
+        div:hover {
+            width: 800px;
+            height: 300px;
+
+            /* transition: all 0.5s; */
+        }
+    </style>
+    
+</head>
+<body>
+    <div></div> 
+</body>
+</html>
